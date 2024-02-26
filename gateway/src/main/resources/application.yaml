@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: bg-gw
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        service: ${spring.application.name}
+#        namespace: dev
+      config:
+        enabled: true
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+#        namespace: ${spring.cloud.nacos.discovery.namespace}
+
+
+    gateway:
+      routes:
+        - id: bg-provider
+          uri: lb://bg-provider
+          predicates:
+            - Path=/provider/**  # 使用断言
+          filters:
+            - StripPrefix=1 # 使用过滤器

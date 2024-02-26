@@ -1,0 +1,31 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: bg-customer
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        service: ${spring.application.name}
+#        namespace: dev
+      config:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+#        namespace: dev
+
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
+  consumer:
+    check: false
+  provider:
+    protocol: dubbo
+    port: '20882'
+  protocol:
+    port: '20882'
+    name: dubbo
+  application:
+    qos-enable: false

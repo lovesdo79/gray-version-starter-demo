@@ -1,0 +1,11 @@
+server:
+  port: 9002
+
+dubbo:
+  provider:
+    port: 20881
+  protocol:
+    name: dubbo
+    port: '20881'
+
+env: gray

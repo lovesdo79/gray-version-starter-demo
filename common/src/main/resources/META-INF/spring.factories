@@ -1,0 +1,5 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.bgfang.config.GrayVersionLoadBalancerClientAutoConfig,\
+com.bgfang.config.GrayVersionLoadBalancerFilterAutoConfig,\
+com.bgfang.config.GrayVersionTagAutoConfig
