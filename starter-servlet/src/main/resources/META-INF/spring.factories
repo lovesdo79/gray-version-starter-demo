@@ -1,0 +1,5 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.bytenew.gray.publish.servlet.config.GrayPublishServletAutoConfiguration,\
+  com.bytenew.gray.publish.servlet.config.GrayVersionLoadBalancerClientAutoConfig,\
+  com.bytenew.gray.publish.servlet.config.GrayVersionLoadBalancerFilterAutoConfig

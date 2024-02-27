@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>com.bgfang</groupId>
-            <artifactId>starter</artifactId>
+            <artifactId>starter-dubbo</artifactId>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.cloud</groupId>

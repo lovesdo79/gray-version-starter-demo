@@ -1,0 +1,3 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.bytenew.gray.publish.dubbo.config.GrayPublishDubboAutoConfig
