@@ -7,9 +7,7 @@ import com.bgfang.filter.GrayTagServletFilter;
 import com.bgfang.init.GrayTagDiscoveryClientInitializer;
 import com.bgfang.init.GrayTagDubboConfigBeanCustomizer;
 import com.bgfang.init.GrayVersionDynamicProperties;
-import com.google.common.collect.Lists;
 import lombok.NonNull;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.config.ProviderConfig;
 import org.apache.dubbo.config.spring.context.config.DubboConfigBeanCustomizer;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -22,6 +20,7 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
 import javax.servlet.Filter;
+import java.util.Collections;
 
 /**
  * @author 竹熊
@@ -58,7 +57,7 @@ public class GrayVersionTagAutoConfig {
     public FilterRegistrationBean<Filter> filterRegistrationBean() {
         FilterRegistrationBean<Filter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new GrayTagServletFilter());
-        registrationBean.setUrlPatterns(Lists.newArrayList("/*"));
+        registrationBean.setUrlPatterns(Collections.singletonList("/*"));
         return registrationBean;
     }
 

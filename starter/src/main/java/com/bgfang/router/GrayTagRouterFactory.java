@@ -1,7 +1,6 @@
 package com.bgfang.router;
 
 import com.bgfang.init.GrayVersionDynamicProperties;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.Activate;
 import org.apache.dubbo.rpc.cluster.CacheableRouterFactory;

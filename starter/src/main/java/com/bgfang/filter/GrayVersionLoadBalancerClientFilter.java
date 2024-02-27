@@ -19,7 +19,6 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 import java.net.URI;
-import java.util.Map;
 
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.*;
 

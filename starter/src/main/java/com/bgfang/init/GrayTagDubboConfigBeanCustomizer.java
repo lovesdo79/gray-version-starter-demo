@@ -1,8 +1,6 @@
 package com.bgfang.init;
 
 import com.bgfang.constants.CommonConstant;
-import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.config.AbstractConfig;
 import org.apache.dubbo.config.ProviderConfig;

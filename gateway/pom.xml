@@ -25,6 +25,10 @@
             <groupId>com.bgfang</groupId>
             <artifactId>common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.bgfang</groupId>
+            <artifactId>starter</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

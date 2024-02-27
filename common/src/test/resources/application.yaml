@@ -1,0 +1,10 @@
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
+  consumer:
+    check: false
+  provider:
+    protocol: dubbo
+    port: '20885'
+  application:
+    qos-enable: false
